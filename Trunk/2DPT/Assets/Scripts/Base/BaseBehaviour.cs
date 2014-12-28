@@ -1,14 +1,15 @@
 using UnityEngine;
 using System.Collections;
 
-public class LevelChanger : MonoBehaviour {
+public class BaseBehaviour : MonoBehaviour
+{
 	
-
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetKeyUp(KeyCode.Q))
+		// Update is called once per frame
+		void Update ()
 		{
-			Application.loadedLevel(0);//start
+				if (Input.GetKeyUp (KeyCode.Q)) {
+						Application.LoadLevel (0);//start
+				}
 		}
 	
 }
